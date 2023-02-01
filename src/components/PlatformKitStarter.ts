@@ -20,6 +20,7 @@ export type Application = any
 
 // to be removed and replaced by the web framework class like (Express, Koa, etc...)
 function Raw() {
+  return () => {}
 }
 
 /**
@@ -104,12 +105,16 @@ export class PlatformKitStarter implements PlatformAdapter<Application> {
 
     layers.forEach((layer) => {
       switch (layer.method) {
-        case "statics":
-          rawApp.use(layer.path, this.statics(layer.path as string, layer.opts as any));
-          return;
+        // case "statics":
+        //   rawApp.use(layer.path, this.statics(layer.path as string, layer.opts as any));
+        //   return;
       }
 
-      rawApp[layer.method](...layer.getArgs());
+      if (rawApp?.[layer.method]) {
+        rawApp[layer.method](...layer.getArgs());
+      } else {
+        this.injector.logger.warn(`[MAPLAYERS] ${layer.method} method not implemented yet.`)
+      }
     });
   }
 

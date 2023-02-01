@@ -28,20 +28,15 @@ build/Release
 # Dependency directory
 # https://docs.npmjs.com/misc/faq#should-i-check-my-node-modules-folder-into-git
 node_modules
-
-.idea
-
-# Typings
-typings/
-
-# Typescript
-packages/**/lib
-packages/**/dist
-tools/**/lib
-tools/**/dist
 .npmrc
 
-# Test
+# IDE
+.idea
+.vscode
+
+
+# Build & Test
+typings/
 /stdout
 /stderr
 /es6/
@@ -51,32 +46,14 @@ tools/**/dist
 /dts/
 /dist
 .tmp
-.vscode
 .clinic
 /reports
 
-/.nyc_output
-**/.nyc_output
-/test/integration/app/spec/swagger.json
-/docs/.vuepress/dist
-/mongodb-binaries
-/packages/multipartfiles/test/.tmp/
-/packages/graphql/graphql-legacy/test/resources/schema.gql
-.db
-**/keys/jwks.json
-/packages/prisma/test/prisma/generated
-
-# Website
-/docs/api
-/docs-references/.vuepress/dist
-/docs-references/.vuepress/public
-/docs-references/.vuepress/components
-/docs-references/.vuepress/styles
-/docs-references/.vuepress/scripts
-/docs-references/.vuepress/enhanceApp.js
-/docs-references/.vuepress/config.base.js
-/docs-references/assets
-/docs-references/docs
-/docs-references/api
-/docs-references/tutorials
-/docs-references/package.json
+# yarn
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions

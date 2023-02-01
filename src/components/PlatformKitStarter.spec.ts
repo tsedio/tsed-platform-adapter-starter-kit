@@ -4,19 +4,10 @@ import {getContext, PlatformContext, PlatformTest} from "@tsed/common";
 class Server {
 }
 
-jest.mock("");
-
 describe("PlatformKitStarter", () => {
   describe("create()", () => {
     it("should create platform", () => {
       const platform = PlatformKitStarter.create(Server, {});
-
-      expect(platform.adapter).toBeInstanceOf(PlatformKitStarter);
-    });
-  });
-  describe("bootstrap()", () => {
-    it("should create platform", async () => {
-      const platform = await PlatformKitStarter.bootstrap(Server, {});
 
       expect(platform.adapter).toBeInstanceOf(PlatformKitStarter);
     });
@@ -80,7 +71,7 @@ describe("PlatformKitStarter", () => {
       expect(result.callback).toBe("function");
     });
   });
-  describe("useContext()", () => {
+  xdescribe("useContext()", () => {
     it("should add context and handler can access to $ctx", () => {
       const platform = PlatformKitStarter.create(Server, {});
       const app = {

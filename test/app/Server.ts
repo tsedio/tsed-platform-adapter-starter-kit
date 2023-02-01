@@ -21,22 +21,23 @@ export const rootDir = __dirname;
     }
   },
   middlewares: [
-    "cookie-parser",
-    "compress",
-    "method-override",
-    {use: "json-parser"},
-    {use: "urlencoded-parser"},
-    {
-      use: "session", options: {
-        secret: "keyboard cat", // change secret key
-        resave: false,
-        saveUninitialized: true,
-        cookie: {
-          secure: false // set true if HTTPS is enabled
-        }
-      }
-    }
-  ]
+    // "cookie-parser",
+    // "compress",
+    // "method-override",
+    // {use: "json-parser"},
+    // {use: "urlencoded-parser"},
+    // {
+    //   use: "session", options: {
+    //     secret: "keyboard cat", // change secret key
+    //     resave: false,
+    //     saveUninitialized: true,
+    //     cookie: {
+    //       secure: false // set true if HTTPS is enabled
+    //     }
+    //   }
+    // }
+  ],
+  disableComponentsScan: false
 })
 export class Server {
   @Inject()
