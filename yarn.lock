@@ -2479,6 +2479,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@tsed/core@npm:7.14.1":
+  version: 7.14.1
+  resolution: "@tsed/core@npm:7.14.1"
+  dependencies:
+    reflect-metadata: ^0.1.13
+    tslib: 2.4.0
+  checksum: c1d153e65d1351a445fac3dfc2cb6070fb5f6f837820ea3e72846a006bbd717c79b3a84a2837cebbc5c69863f6b4fc950b96bd48f08768df09cdbfa46f24d830
+  languageName: node
+  linkType: hard
+
 "@tsed/di@npm:7.13.3":
   version: 7.13.3
   resolution: "@tsed/di@npm:7.13.3"
@@ -2629,7 +2639,7 @@ __metadata:
     "@commitlint/config-conventional": 17.4.2
     "@tsed/ajv": 7.13.3
     "@tsed/common": 7.13.3
-    "@tsed/core": 7.13.3
+    "@tsed/core": 7.14.1
     "@tsed/di": 7.13.3
     "@tsed/json-mapper": 7.13.3
     "@tsed/logger": 6.2.2
