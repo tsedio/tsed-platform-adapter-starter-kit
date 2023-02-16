@@ -15,13 +15,11 @@ declare global {
     export interface NextFunction {}
 
     export interface Response {}
-    export interface Request {}
-
-    export interface StaticsOptions {}
-
     export interface Request {
       id: string;
       $ctx: PlatformContext;
     }
+
+    export interface StaticsOptions {}
   }
 }
