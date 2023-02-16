@@ -60,15 +60,15 @@ describe("PlatformKitStarter", () => {
       const result = platform.adapter.app();
 
       expect(result.app).toEqual(App);
-      expect(result.callback).toBe("function");
+      expect(typeof result.callback).toBe("function");
     });
     it("should return an object with callback function and orignal app from default configuration", () => {
       const platform = PlatformKitStarter.create(Server, {});
 
       const result = platform.adapter.app();
 
-      expect(result.app).toBe("function");
-      expect(result.callback).toBe("function");
+      expect(typeof result.app).toEqual("function");
+      expect(typeof result.callback).toEqual("function");
     });
   });
   xdescribe("useContext()", () => {
