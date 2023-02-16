@@ -7,7 +7,7 @@ declare global {
 
     export interface Configuration {
       /**
-       * Configuration related to Express platform application.
+       * Configuration related to the platform application.
        */
       kitStarter: PlatformKitStarterSettings;
     }

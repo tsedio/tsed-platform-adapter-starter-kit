@@ -2,7 +2,7 @@ import {$log, BodyParams, Controller, Get, PlatformResponse, Post, QueryParams, 
 import {Returns} from "@tsed/schema";
 import {promisify} from "util";
 import {agent, SuperAgentStatic} from "superagent";
-import {PlatformExpress} from "../../src";
+import {PlatformKitStarter} from "../../src";
 import {Server} from "./Server";
 
 if (process.env.NODE_ENV !== "test") {
@@ -43,7 +43,7 @@ if (process.env.NODE_ENV !== "test") {
 
   async function bootstrap() {
     try {
-      const platform = await PlatformExpress.bootstrap(Server, {
+      const platform = await PlatformKitStarter.bootstrap(Server, {
         disableComponentScan: true,
         logger: {
           perf: false

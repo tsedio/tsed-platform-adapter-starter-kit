@@ -40,7 +40,7 @@ export class PlatformKitStarter implements PlatformAdapter<Application> {
    * @param settings
    */
   static create(module: Type<any>, settings: Partial<TsED.Configuration> = {}) {
-    return PlatformBuilder.create<Express.Application>(module, {
+    return PlatformBuilder.create<Application>(module, {
       ...settings,
       adapter: PlatformKitStarter
     });
