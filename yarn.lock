@@ -2499,6 +2499,26 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@tsed/di@npm:7.14.1":
+  version: 7.14.1
+  resolution: "@tsed/di@npm:7.14.1"
+  dependencies:
+    tslib: 2.4.0
+  peerDependencies:
+    "@tsed/core": ^7.14.1
+    "@tsed/logger": ">=6.2.2"
+    "@tsed/schema": ^7.14.1
+  peerDependenciesMeta:
+    "@tsed/core":
+      optional: false
+    "@tsed/logger":
+      optional: false
+    "@tsed/schema":
+      optional: false
+  checksum: f6f3866146001ac2940d412916c2706cebe64c3bc929fd0e5afcbd8ff1762036b36e0661406d22e11281d0fee4615fc66a04ba4ef627a6efba94e184671b3acd
+  languageName: node
+  linkType: hard
+
 "@tsed/engines@npm:7.13.3":
   version: 7.13.3
   resolution: "@tsed/engines@npm:7.13.3"
@@ -2630,7 +2650,7 @@ __metadata:
     "@tsed/ajv": 7.13.3
     "@tsed/common": 7.13.3
     "@tsed/core": 7.13.3
-    "@tsed/di": 7.13.3
+    "@tsed/di": 7.14.1
     "@tsed/json-mapper": 7.13.3
     "@tsed/logger": 6.2.2
     "@tsed/mongoose": 7.13.3
